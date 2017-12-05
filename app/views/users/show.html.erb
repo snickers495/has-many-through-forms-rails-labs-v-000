@@ -1,5 +1,5 @@
 
 <%= @user.username %>
 <% @user.comments.each do |c| %>
-<%= c.content %>
+<%= c.content %> on <%= link_to c.post, post_path(c.post) %>
 <% end%>
