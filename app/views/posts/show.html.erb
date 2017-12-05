@@ -10,7 +10,7 @@ Users:
 <%= link_to u.username, user_path(u)%>
 <% end %>
 
-Comments: 
+Comments:
 <% @post.comments.each do |c|%>
 says: <%= c.content%>
 <% end %>
