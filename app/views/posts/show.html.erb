@@ -9,3 +9,8 @@ Users:
 <% @post.users.uniq.each do |u|%>
 <%= link_to u.username, user_path(u)%>
 <% end %>
+
+Comments: 
+<% @post.comments.each do |c|%>
+says: <%= c.content%>
+<% end %>
